@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="main__title">Подберём вуз мечты</h1>
+      <h2 class="main__sub-title">
+        Ответьте на 8 простых вопросов, и мы составим список наболее подходящих
+        для вас вузов
+      </h2>
+      <img class="main__image" src="./imgs/Group 1593.png" />
+      <template id="quiz-template">
+        <article class="quiz">
+          <div class="quiz__head">
+            <span class="quiz__title"></span><span class="quiz__counter"></span>
+          </div>
+          <div class="quiz__container"></div>
+          <div class="quiz__nav">
+            <button class="quiz__back">
+              <span>&#60;</span><span>Назад</span>
+            </button>
+            <button class="quiz__forward">
+              <span>Далее</span><span>&#62;</span>
+            </button>
+          </div>
+        </article>
+      </template>
+      <template id="quiz-radio">
+        <label class="quiz__radio-label">
+          <span class="quiz__radio-text"></span>
+          <input type="radio" class="quiz__radio" />
+        </label>
+      </template>
+      <template id="quiz-select">
+        <div class="quiz__select-container">
+          <select class="quiz__select"></select>
+          <span class="quiz__select-span"></span>
+        </div>
+      </template>
+      <template id="quiz-form">
+        <form class="quiz__form">
+          <button class="quiz__submit" type="submit">Получить подборку</button>
+          <span class="quiz__agree">
+            Нажимая на кнопку, вы даете согласие на обработку своих
+            <a href="#">Персональных данных</a>
+          </span>
+        </form>
+      </template>
+      <template id="quiz-input">
+        <input class="quiz__input" />
+      </template>
+      <article></article>
+    </main>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

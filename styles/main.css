@@ -1,0 +1,57 @@
+.main{
+    box-sizing: content-box;
+    max-width: 1216px;
+    display: grid;
+    grid-template-columns: 1fr 576px;
+    grid-template-areas: 
+    "a b"
+    "c b"
+    "d b";    
+    justify-content: space-between;
+    background-color: #CAFFA0;
+    border-radius: 24px;
+    padding: 3.2rem;
+}
+
+.main__title{
+    grid-area: a;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    font-weight: 600;
+    padding-bottom: 1.6rem;
+}
+
+.main__sub-title{
+    grid-area: c;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.main__image{
+    grid-area: d;
+    padding-top: 8rem;
+}
+
+@media screen and (max-width: 760px){
+    .main{
+        gap: 24px;
+        max-width: 360px;
+        grid-template-areas: 
+        "d"
+        "a"
+        "c"
+        "b";
+        grid-template-columns: 1fr;
+        padding: 24px 16px;
+    }
+
+    .main__title{
+        padding: 0;
+    }
+
+    .main__image{
+        padding: 0;
+    }
+}

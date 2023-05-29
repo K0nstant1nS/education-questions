@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Onest";
+    src: url("./fonts/OnestRegular1602-hint.woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Onest";
+    src: url("./fonts/OnestMedium1602-hint.woff");
+    font-weight: 500;
+}
